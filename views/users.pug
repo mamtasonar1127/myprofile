@@ -1,0 +1,22 @@
+extends header
+
+block content 
+  .body-part
+   .container
+            h2 SignIn Here
+            form(action=link method="POST")
+                .form-group
+                    label(for='email') Email:
+                    input#email.form-control(type='email', placeholder='Enter email', name='email')
+                    br
+                    br
+                .form-group
+                    label(for='password') Password:
+                    input#pwd.form-control(type='password', placeholder='Enter password', name='password')
+                    br
+                    br
+                
+                button.btn.btn-primary(type='submit') Submit
+                br
+                br
+                a(href='/register')  New Account? Register
